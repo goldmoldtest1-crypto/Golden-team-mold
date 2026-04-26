@@ -1,6 +1,10 @@
+import { defineConfig } from '@tanstack/react-start/config'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
-export default {
+export default defineConfig({
+  server: {
+    preset: 'vercel',
+  },
   vite: {
     plugins: [
       tsConfigPaths({
@@ -8,4 +12,4 @@ export default {
       }),
     ],
   },
-}
+})
