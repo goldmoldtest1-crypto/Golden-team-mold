@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@convex-dev/react-query": "^0.0.2",
+    "@convex-dev/react-query": "^0.0.1-alpha.0",
     "@tanstack/react-query": "^5.62.7",
     "@tanstack/react-router": "^1.92.1",
     "@tanstack/start": "^1.92.5",
