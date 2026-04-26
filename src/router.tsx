@@ -1,9 +1,13 @@
 import { createRouter as createTanStackRouter } from '@tanstack/react-router'
-import { routeTree } from './routeTree.gen'
+import { Route as rootRoute } from './routes/__root'
+import { Route as indexRoute } from './routes/index'
 
 export function createRouter() {
+  const routeTree = rootRoute.addChildren([indexRoute])
+  
   return createTanStackRouter({
     routeTree,
+    defaultPreload: 'intent',
   })
 }
 
