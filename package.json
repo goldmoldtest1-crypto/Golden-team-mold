@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "node .output/server/index.mjs"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
     "@convex-dev/react-query": "^0.1.0",
@@ -16,7 +16,8 @@
     "convex": "^1.31.7",
     "lucide-react": "^0.468.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "vinxi": "^0.5.1"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",

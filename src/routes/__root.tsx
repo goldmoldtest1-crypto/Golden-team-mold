@@ -1,5 +1,10 @@
-import { createRootRoute, Outlet, ScrollRestoration } from '@tanstack/react-router'
-import { Meta, Scripts } from '@tanstack/start'
+import { 
+  createRootRoute, 
+  Outlet, 
+  ScrollRestoration,
+  HeadContent,
+  Scripts
+} from '@tanstack/react-router'
 import * as React from 'react'
 import '../styles/app.css'
 
@@ -26,7 +31,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html>
       <head>
-        <Meta />
+        <HeadContent />
       </head>
       <body>
         {children}
